@@ -1,5 +1,7 @@
 # Telepítés:
+```
 npm install adoszam-ellenorzo
+```
 
 # Használat:
 
