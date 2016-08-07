@@ -1,6 +1,6 @@
 
 
-interface IValidatorResponse{
+export interface IValidatorResponse{
     valid: boolean
 }
 

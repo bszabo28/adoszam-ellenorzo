@@ -1,5 +1,5 @@
 
-import {IValidatorError,IValidatorInfo} from "./validator.d.ts";
+import {IValidatorError,IValidatorInfo} from "./nav.d.ts";
 
 
 export class Validator{
