@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "Adószám ellenörző",
   "main": "lib/index.js",
+  "typings": "lib/index",
   "author": "Szabó Balázs",
   "license": "ISC",
   "devDependencies": {
