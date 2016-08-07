@@ -6,8 +6,6 @@
         "outDir": "./lib"
     },
     "files": [
-        "./src/validator.ts",
-        "./src/generator.ts",
-        "./src/validator.d.ts"
+        "./src/index.ts"
     ]
 }

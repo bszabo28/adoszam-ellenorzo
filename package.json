@@ -2,10 +2,11 @@
   "name": "adoszam-ellenorzo",
   "version": "1.0.5",
   "description": "Adószám ellenörző",
-  "main": "lib/validator.js",
+  "main": "lib/index.js",
   "author": "Szabó Balázs",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^2.0.0"
+    "typescript": "^2.0.0",
+    "webpack": "^1.13.1"
   }
 }
