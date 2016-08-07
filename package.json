@@ -1,6 +1,6 @@
 {
   "name": "adoszam-ellenorzo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adószám ellenörző",
   "main": "lib/validator.js",
   "author": "Szabó Balázs",
