@@ -8,10 +8,9 @@ npm install adoszam-ellenorzo
 ```javascript
 import {Validator} from "adoszam-ellenorzo/lib/validator";
 
-var taxnumber = new Validator();
-taxnumber.check("24225221-2-43");
+(new Validator()).check("24225221-2-43");
 
-// Válasz
+// Eredmény:
 /*{ 
     valid: true,
     main: '24225221',
