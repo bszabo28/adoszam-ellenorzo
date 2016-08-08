@@ -6,11 +6,22 @@ npm install adoszam-ellenorzo
 # Használat:
 
 ```javascript
-import {Validator} from "adoszam-ellenorzo/lib/validator";
+import { Validator } from "adoszam-ellenorzo/lib/validator";
+import { Generator } from "adoszam-ellenorzo/lib/generator";
+import { IValidatorError, IValidatorInfo} from "adoszam-ellenorzo/lib/nav";
 
-(new Validator()).check("24225221-2-43");
+var validator:Validator = new Validator();
+var result:(IValidatorError|IValidatorInfo) = validator.check("24225221-2-43");
 
-// Eredmény:
+// Véletlen adószámot ad vissza
+result = Generator.get(); 
+
+// Véletlen számokkal kiegészíti az adószámot, csak akkor lesz érvénytelen, 
+// ha a paraméternek megadott szám már eleve érvénytelenné teszi
+result = Generator.get('242252');   
+
+
+// Eredmény hibátlan adószám esetében:
 /*{ 
     valid: true,
     main: '24225221',

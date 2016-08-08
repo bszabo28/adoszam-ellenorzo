@@ -1,10 +1,23 @@
 /// <reference path="../typings/tsd.d.ts" />
 "use strict";
+// HIBÁK
+// WINDOWS ALATT NEM IGAZÁN MŰKÖDIK A test/*.test.ts -> nem találja!
 var validator_1 = require("../src/validator");
+var generator_1 = require("../src/generator");
 describe('Adószám ellenörző teszt', function () {
     var subject;
+    var generator;
     beforeEach(function () {
         subject = new validator_1.Validator();
+        generator = new generator_1.Generator(subject);
+    });
+    describe('#Adószámok tesztelése', function () {
+        it('Megfelelő adószámok', function () {
+            var c = 1000;
+            while (c-- > 0) {
+                var result = generator.get();
+            }
+        });
     });
     describe('#Hibák tesztelése', function () {
         it('Túl rövid, vagy hosszú adószám', function () {
