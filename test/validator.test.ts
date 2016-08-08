@@ -1,14 +1,35 @@
 /// <reference path="../typings/tsd.d.ts" />
 
+// HIBÁK
+// WINDOWS ALATT NEM IGAZÁN MŰKÖDIK A test/*.test.ts -> nem találja!
+
 import { Validator } from "../src/validator";
+import { Generator } from "../src/generator";
 import { IValidatorError, IValidatorInfo} from "../src/nav";
 
 
 describe('Adószám ellenörző teszt', () => {
     var subject : Validator;
+    var generator: Generator;
 
     beforeEach(function () {
         subject = new Validator();
+        generator = new Generator(subject); 
+    });
+
+    describe('#Adószámok tesztelése', () => {
+
+        it('Megfelelő adószámok', () => {
+            var c = 1000;
+            while(c-- > 0){
+                let result = generator.get();
+
+                // if(result['valid'] === false){
+                //     console.log(result);
+                //     throw new Error('Nem megfelelő adószám generálás');
+                // }
+            }
+        });
     });
 
     describe('#Hibák tesztelése', () => {

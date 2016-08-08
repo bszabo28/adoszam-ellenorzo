@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "build": "tsc",
-    "test": "tsc test/*.test.ts --module commonjs && mocha"
+    "test": "tsc test/validator.test.ts --module commonjs && mocha"
   },
   "devDependencies": {
     "mocha": "^3.0.1",

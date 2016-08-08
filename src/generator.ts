@@ -3,7 +3,7 @@ import {IValidatorError,IValidatorInfo} from "./nav.d.ts";
 import {Validator} from "./validator.ts";
 
 
-export class TaxnumberGenerator{
+export class Generator{
     
     protected _random(min,max):number{
         return Math.floor(Math.random() * (max - min)) + min;
@@ -11,11 +11,10 @@ export class TaxnumberGenerator{
     
     public get(taxnumber?:string):(IValidatorError|IValidatorInfo|boolean){
         
-        var txn = typeof taxnumber !== 'undefined' ? 
-            taxnumber : '';
-        
+        // Kapott-e paramétert a függvény?
+        var txn = typeof taxnumber !== 'undefined' ? taxnumber : '';
         var taxnum:string[] = txn ? txn.split('') : [];
-        var orig:string[] = txn ? txn.split('') : [];
+        var orig:string[] = taxnum.slice(0);
         var trc = this.validator.getRegionCodes();  
         
         for(let i=orig.length,j=7;i<j;++i){

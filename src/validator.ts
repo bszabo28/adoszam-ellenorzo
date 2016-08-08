@@ -279,8 +279,6 @@ export class Validator{
     |
     */    
     public check(taxnumber:string):(IValidatorInfo|IValidatorError|boolean){
-        // Csak egyser fut le
-        this._generateTaxRegionCodes();
 
         if(!taxnumber){
             return false;
@@ -302,5 +300,10 @@ export class Validator{
         }
         
         return toReturn;
+    }
+
+
+    public constructor(){
+        this._generateTaxRegionCodes();
     }
 }
