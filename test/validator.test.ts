@@ -34,7 +34,7 @@ describe('Adószám ellenörző teszt', () => {
 
     describe('#Hibák tesztelése', () => {
 
-        it('Túl rövid, vagy hosszú adószám', () => {
+        it('Túl rövid vagy hosszú adószám', () => {
             var result = subject.check("23");
 
             if (!result || result['valid'] === true) {
@@ -44,11 +44,11 @@ describe('Adószám ellenörző teszt', () => {
                 result['errors'][0] !== 'Pontosan 8 vagy 11 számjegyből állhat'
             ){
                 console.log(result);
-                throw new Error('nem megfelelő hibaüzenet');
+                throw new Error('Nem megfelelő hibaüzenet');
             }
         });
 
-        it('Formailag nem megfelelő adószámok', () => {
+        it('Formailag nem megfelelő adószám', () => {
             var result = subject.check("2422522a243");
             
             if (!result || result['valid'] === true) {
