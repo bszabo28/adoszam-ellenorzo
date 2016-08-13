@@ -1,6 +1,7 @@
 
-import {IValidatorError,IValidatorInfo} from "./nav.d.ts";
-import {Validator} from "./validator.ts";
+import {IValidatorError} from "./index";
+import {IValidatorInfo} from "./index";
+import {Validator} from "./index";
 
 
 export class Generator{

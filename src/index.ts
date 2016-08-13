@@ -1,7 +1,7 @@
-
-import {IValidatorError,IValidatorInfo} from "./nav.d.ts"
-import {Validator} from "./validator.ts";
-import {Generator} from "./generator.ts";
+import {IValidatorError} from "./nav.d"
+import {IValidatorInfo} from "./nav.d"
+import {Validator} from "./validator";
+import {Generator} from "./generator";
 
 export {IValidatorError};
 export {IValidatorInfo};
