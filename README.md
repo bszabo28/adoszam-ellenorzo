@@ -6,6 +6,7 @@ npm install adoszam-ellenorzo
 # Használat:
 
 ```javascript
+// Typescript
 import { Validator } from "adoszam-ellenorzo/lib/validator";
 import { Generator } from "adoszam-ellenorzo/lib/generator";
 import { IValidatorError, IValidatorInfo} from "adoszam-ellenorzo/lib/nav";
