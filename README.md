@@ -7,9 +7,11 @@ npm install adoszam-ellenorzo
 
 ```javascript
 // Typescript
-import { Validator } from "adoszam-ellenorzo/lib/validator";
-import { Generator } from "adoszam-ellenorzo/lib/generator";
-import { IValidatorError, IValidatorInfo} from "adoszam-ellenorzo/lib/nav";
+import { Validator,
+         Generator,
+         IValidatorError, 
+         IValidatorInfo
+    } from "adoszam-ellenorzo";
 
 var validator:Validator = new Validator();
 var result:(IValidatorError|IValidatorInfo) = validator.check("24225221-2-43");
