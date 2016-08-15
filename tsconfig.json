@@ -3,7 +3,8 @@
     "compilerOptions": {
         "module": "commonjs",
         "declaration": true,
-        "outDir": "./lib"
+        "outDir": "./lib",
+        "removeComments": true
     },
     "files": [
         "./src/index.ts"

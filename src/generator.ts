@@ -1,8 +1,7 @@
 
-import {IValidatorError} from "./index";
-import {IValidatorInfo} from "./index";
-import {Validator} from "./index";
-
+import { IValidatorError, 
+         IValidatorInfo, 
+         Validator } from "./index";
 
 export class Generator{
     

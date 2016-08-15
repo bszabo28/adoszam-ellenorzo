@@ -1,6 +1,5 @@
 
-import {IValidatorError} from "./index";
-import {IValidatorInfo} from "./index";
+import {IValidatorError, IValidatorInfo} from "./index";
 
 
 export class Validator{

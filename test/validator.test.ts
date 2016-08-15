@@ -3,12 +3,10 @@
 // HIBÁK
 // WINDOWS ALATT NEM IGAZÁN MŰKÖDIK A test/*.test.ts -> nem találja!
 
-import {Validator, 
-        Generator,
-        IValidatorError, 
-        IValidatorInfo
-    } 
-from "../src/index";
+import {IValidatorError, 
+        IValidatorInfo,
+        Validator, 
+        Generator } from "../src/index";
 
 
 describe('Adószám ellenörző teszt', () => {
