@@ -2,6 +2,8 @@
 ```
 npm install adoszam-ellenorzo
 ```
+# Demo:
+https://bszabo28.github.io/adoszam-ellenorzo/
 
 # Használat:
 
