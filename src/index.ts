@@ -1,4 +1,4 @@
-import {IValidatorError, IValidatorInfo} from "./nav.d";
+import {IValidatorError, IValidatorInfo} from "./nav";
 import {Validator} from "./validator";
 import {Generator} from "./generator";
 
