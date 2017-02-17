@@ -1,0 +1,66 @@
+@charset 'utf-8';
+
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+h3{
+        margin: 0;
+        padding: 1em 0;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &.left-aligned{
+               text-align: left; 
+               display: inline-block;
+        }
+}
+
+header{
+        background-color: #3E474F;
+        color:white;
+}
+
+main{
+        margin-top: 3em;
+}
+
+table{
+        table-layout: static;
+        th{
+                width: 40%;
+        }
+}
+
+.jumbotron{
+        margin-top: 1em;
+}
+
+.form-group{
+
+        background-color: $gray-lighter;
+        padding: 2em;
+        border-radius: $panel-border-radius;
+}
+
+.add-item{
+
+        text-align: right;
+        button{
+                display: inline-block;
+        }
+}
+
+.taxnumber-generator{
+        font-size: 0.8em;
+        text-align: right;
+        color: $gray-light;
+        cursor: pointer;
+        
+        &:hover{
+                color: $gray-dark;
+        }
+}
+
+.message{
+        padding: 1em 0.5em;
+}
